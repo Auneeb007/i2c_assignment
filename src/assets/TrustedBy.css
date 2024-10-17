@@ -1,0 +1,52 @@
+.trusted-by {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.trusted-by-container {
+  margin-bottom: 16px;
+}
+
+.trusted-by h2 {
+  margin-bottom: 0px;
+}
+
+.trusted-by p {
+  margin-bottom: 24px;
+}
+
+.trusted-by-logo {
+  margin: 0 28px;
+  padding: 0;
+  border: none;
+}
+
+.custom-arrow {
+  font-size: 24px;
+  color: #46b0e6 !important;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev {
+  left: 10px;
+}
+.short-slider {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.slick-track {
+  display: flex !important;
+  align-items: center !important;
+}
+
+@media (max-width: 768px) {
+  .custom-arrow {
+    font-size: 18px;
+  }
+}

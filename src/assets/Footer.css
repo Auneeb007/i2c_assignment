@@ -1,0 +1,147 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  max-width: 1200px;
+  margin-top: 60px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.top-line {
+  width: 100%;
+  height: 2px;
+  background-color: #e0e0e0;
+  margin-bottom: 32px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo .logo-img-footer {
+  height: 34px;
+}
+
+nav {
+  margin-left: auto;
+}
+
+.footer-nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 32px;
+}
+
+.footer-nav-links a {
+  text-decoration: none;
+  color: #515151;
+  transition: color 0.3s ease-in-out;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+}
+
+.footer-nav-links a:hover {
+  color: #ff8800;
+}
+
+.cta-btn-footer {
+  background-color: #f89d21;
+  color: #fff;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  margin-left: 32px;
+  box-shadow: 0px 10px 40px 0px #f89d21b2;
+}
+
+.cta-btn-footer:hover {
+  background-color: #ff7300;
+  transform: scale(1.05);
+}
+
+.footer-copyright {
+  margin-top: 32px;
+  font-size: 11px;
+  color: #515151;
+  align-self: flex-end;
+  width: 100%;
+  text-align: right;
+}
+
+.menu-btn-footer {
+  display: none;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #515151;
+  margin-right: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-btn-header:hover {
+  color: #ff8800;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .cta-btn-footer {
+    margin-left: 16px;
+  }
+
+  .footer-nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .menu-btn-footer {
+    display: block;
+  }
+
+  .footer-nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -55px;
+    right: 45px;
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    gap: 16px;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}

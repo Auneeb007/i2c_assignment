@@ -1,0 +1,67 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  border-radius: 20px;
+  box-shadow: none;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.underline {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4px;
+  margin-right: 0.5rem;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin-right: 2rem;
+}
+
+.hero-content h1 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 3rem;
+  color: #333;
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  color: #777;
+  margin-bottom: 1.5rem;
+}
+
+.highlight {
+  color: #46b0e6;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content .profile-card {
+    width: 100%;
+  }
+}

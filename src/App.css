@@ -1,0 +1,41 @@
+#root {
+  max-width: 1280px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("./images/Background.svg") no-repeat;
+  background-size: cover;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.hamburger-menu {
+  width: 25px;
+  height: 2px;
+  background-color: black;
+  margin: 6px 0;
+  transition: background-color 0.3s ease;
+}
+
+.menu-btn-header.open .hamburger-menu {
+  background-color: #f89d21;
+}
+.menu-btn-footer.open .hamburger-menu {
+  background-color: #f89d21;
+}

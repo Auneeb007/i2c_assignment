@@ -1,0 +1,57 @@
+.progress {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f6fbf8;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0px 34px 44px -20px #b9ceea40;
+  gap: 10px;
+}
+
+.progress-item {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 24px;
+  gap: 10px;
+}
+
+.progress-icon {
+  width: 50px;
+  height: auto;
+  margin: 24px;
+}
+.progress-title {
+  font-size: 1.2em;
+  margin: 0;
+  color: #f89d21;
+}
+
+.progress-description {
+  font-size: 0.9em;
+  color: #515151;
+  margin: 0;
+}
+
+.progress-text {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .progress {
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+  }
+
+  .progress-item {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 16px;
+  }
+
+  .progress-icon {
+    margin: 16px;
+  }
+}
